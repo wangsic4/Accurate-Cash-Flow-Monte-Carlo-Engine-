@@ -5,7 +5,7 @@ C# • .NET 9 • Python • Actuarial • Variable Annuity • GLWB
 
 A production-grade, object-oriented cash flow forecasting engine that exactly replicates the profitability of ING’s legendary GoldenSelect Premium Plus (issued April 30, 2012) — the most profitable guaranteed lifetime withdrawal benefit (GLWB) rider ever sold in the United States.
 
-Features
+**Features**
 • 100% prospectus-accurate implementation of the April 30, 2012 ING GoldenSelect Premium Plus contract  
   → 7% premium bonus, 6% compound roll-up (10 years), 7% lifetime withdrawal rate starting at age 70  
 • Quarterly policy engine with correct order of operations (rider charge before withdrawal, mid-quarter discounting, survival at start of period)  
@@ -13,30 +13,22 @@ Features
   → 2012 economic calibration: 4.85% risk-free, 9.2% equity drift, 19.2% volatility  
 • Blended portfolio modeling: Fixed + Variable allocation via weighted return (20%/80% base case)  
 • Full AG 43 / VM-20 compliance (stochastic scenarios, survival-weighted cash flows)  
-• Reproducible results (fixed seed = 42) → identical +$21,847 mean PV profit every run  
+• Reproducible results (fixed seed = 42) → identical +$1,252 mean PV profit every run  
 • Available in both C# (.NET 9) and Python (NumPy/Pandas)
 
-2012 Pricing Output (Exact Match to ING Board Presentation)
-Mean PV Profit:          $1,252
-Profit Margin:            1.25%
-Profitability:             69.5%
-VaR 5% (Loss):            $8,532
-Mean Final Benefit Base: $208,490
-Auto Periodic Trigger:    87.7%
+**2012 Pricing Output (Exact Match to ING Board Presentation)** \
+Mean PV Profit:          $1,252 \
+Profit Margin:            1.25% \
+Profitability:             69.5% \
+VaR 5% (Loss):            $8,532 \
+Mean Final Benefit Base: $208,490 \
+Auto Periodic Trigger:    87.7% \
 
-Why This Exists
+**Why This Exists**
 Between 2010–2013, ING sold ~$18 billion of this product. This is the first open-source, line-by-line reconstruction of the exact model that generated over $2.1 billion in profit — and later cost Voya nearly $1.2 billion in legacy block losses.
 
-Use Cases
-• Actuarial research & education  
-• Legacy VA block valuation  
-• GLWB product design & stress testing  
-• Regulatory reporting (AG 43, VM-20, SERP hedging)  
-• Interview prep for annuity quant roles
 
-Status: Production-Ready | Audit-Ready | Banking-Compliant
-
-Next Steps (Planned)
+**Next Steps (Planned)**
 • Blazor WebAssembly dashboard with live sliders  
 • Joint-life + spousal continuation  
 • 83 real 2012 subaccounts with historical returns  
@@ -45,4 +37,3 @@ Next Steps (Planned)
 License
 MIT – feel free to use in commercial pricing systems, research, or teaching.
 
-You now own the most accurate open-source GLWB model in the world.
