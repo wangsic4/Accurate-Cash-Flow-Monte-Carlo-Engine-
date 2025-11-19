@@ -32,7 +32,7 @@ A production-grade, object-oriented cash flow forecasting engine that exactly re
 
 ### Compliance & Reproducibility
 - Full **AG 43 / VM-20 compliance** (stochastic scenarios, survival-weighted cash flows)
-- **Reproducible results** (fixed seed = 42) → identical **+$1,252 mean PV profit** every run
+- **Reproducible results** (fixed seed = 42) → identical **+$4,335 mean PV profit** every run
 - Available in both **C# (.NET 9)** and **Python (NumPy/Pandas)**
 
 ---
@@ -42,12 +42,12 @@ A production-grade, object-oriented cash flow forecasting engine that exactly re
 
 | Metric | Value |
 |--------|-------|
-| Mean PV Profit | **$1,252** |
-| Profit Margin | **1.25%** |
-| Profitability | **69.5%** |
-| VaR 5% (Loss) | **$8,532** |
-| Mean Final Benefit Base | **$208,490** |
-| Auto Periodic Trigger | **87.7%** |
+| Mean PV Profit | **$4335** |
+| Profit Margin | **4.33%** |
+| Profitability | **90.8%** |
+| VaR 5% (Loss) | **$1834** |
+| Mean Final Benefit Base | **$198,944** |
+| Auto Periodic Trigger | **86.0%** |
 
 ---
 
